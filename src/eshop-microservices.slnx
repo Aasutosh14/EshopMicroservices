@@ -1,1 +1,11 @@
-<Solution />
+<Solution>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="BuildingBlocks/BuildingBlocks/BuildingBlocks.csproj" Id="0f242b22-8ad4-4879-8334-e24491fd07cc" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+  <Project Path="Services/Basket/Basket.API/Basket.API.csproj" Id="c38598b6-aaf7-42d4-a8e9-e9a4c667bc08" />
+  <Project Path="Services/Catalog/Catalog.API/Catalog.API.csproj" Id="603ff6c7-d23e-4f19-add3-f505ba2c6583" />
+  <Project Path="Services/Discount/Discount.Grpc/Discount.Grpc.csproj" Id="aff3d20d-cbef-43b4-8a7c-60cddb04d480" />
+</Solution>
