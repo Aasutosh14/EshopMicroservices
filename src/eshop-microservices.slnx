@@ -8,4 +8,8 @@
   <Project Path="Services/Basket/Basket.API/Basket.API.csproj" Id="c38598b6-aaf7-42d4-a8e9-e9a4c667bc08" />
   <Project Path="Services/Catalog/Catalog.API/Catalog.API.csproj" Id="603ff6c7-d23e-4f19-add3-f505ba2c6583" />
   <Project Path="Services/Discount/Discount.Grpc/Discount.Grpc.csproj" Id="aff3d20d-cbef-43b4-8a7c-60cddb04d480" />
+  <Project Path="Services/Ordering/Ordering.API/Ordering.API.csproj" Id="faa5bf64-085c-42bc-a892-61143abe66e9" />
+  <Project Path="Services/Ordering/Ordering.Application/Ordering.Application.csproj" Id="05914de1-8db0-4b06-bb48-c9e20446a5b8" />
+  <Project Path="Services/Ordering/Ordering.Domain/Ordering.Domain.csproj" Id="f2199f27-460d-48f0-97fb-c9af93875b14" />
+  <Project Path="Services/Ordering/Ordering.Infrastructure/Ordering.Infrastructure.csproj" Id="7b8de2a1-905a-4b10-91b0-8e5acac18f02" />
 </Solution>
