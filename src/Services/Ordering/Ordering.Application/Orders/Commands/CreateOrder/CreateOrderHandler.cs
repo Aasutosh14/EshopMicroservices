@@ -2,10 +2,10 @@
 
 namespace Ordering.Application.Orders.Commands.CreateOrder
 {
-    public class UpdateOrderHandler(IApplicationDBContext dbContext) : ICommandHandler<UpdateOrderCommand, CreateOrderResult>
+    public class CreateOrderHandler(IApplicationDBContext dbContext) : ICommandHandler<CreateOrderCommand  , CreateOrderResult>
     {
 
-        public async Task<CreateOrderResult> Handle(UpdateOrderCommand command, CancellationToken cancellationToken)
+        public async Task<CreateOrderResult> Handle(CreateOrderCommand command, CancellationToken cancellationToken)
         {
             var order = CreateNewOrder(command.Order);
             dbContext.Orders.Add(order);

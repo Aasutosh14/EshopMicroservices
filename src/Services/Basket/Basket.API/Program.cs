@@ -1,5 +1,6 @@
 
 
+using BuildingBlocks.Messaging.MassTransit;
 using Discount.Grpc;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +30,8 @@ builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(
 {
     options.Address = new Uri(builder.Configuration["GrpcSettings:DiscountUrl"]!);
 });
+
+builder.Services.AddMessageBroker(builder.Configuration);
 
 var app = builder.Build();
 

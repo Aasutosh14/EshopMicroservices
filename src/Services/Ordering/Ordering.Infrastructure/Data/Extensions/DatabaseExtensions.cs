@@ -11,7 +11,7 @@ namespace Ordering.Infrastructure.Data.Extensions
         {
             using var scope = app.Services.CreateScope();
             var context = scope.ServiceProvider.GetRequiredService<ApplicationDBContext>();
-            context.Database.MigrateAsync().GetAwaiter().GetType();
+            context.Database.MigrateAsync().GetAwaiter().GetResult();
             await SeedAsync(context);
         }
 

@@ -1,8 +1,8 @@
 ﻿namespace Ordering.Application.Orders.Commands.UpdateOrder
 {
-    public record DeleteOrderCommand(OrderDto Order) : ICommand<UpdateOrderResult>;
+    public record UpdateOrderCommand(OrderDto Order) : ICommand<UpdateOrderResult>;
     public record UpdateOrderResult(bool IsSuccessful);
-    public class UpdateOrderCommandValidator : AbstractValidator<DeleteOrderCommand>
+    public class UpdateOrderCommandValidator : AbstractValidator<UpdateOrderCommand>
     {
         public UpdateOrderCommandValidator()
         {

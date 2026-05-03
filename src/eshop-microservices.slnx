@@ -1,7 +1,9 @@
 <Solution>
   <Folder Name="/BuildingBlocks/">
+    <Project Path="BuildingBlocks/BuildingBlocks.Messaging/BuildingBlocks.Messaging.csproj" Id="00bb6b98-4b86-4331-99f5-baf86ff93f94" />
     <Project Path="BuildingBlocks/BuildingBlocks/BuildingBlocks.csproj" Id="0f242b22-8ad4-4879-8334-e24491fd07cc" />
   </Folder>
+  <Project Path="ApiGateways/YarpApiGateway/YarpApiGateway.csproj" Id="232c67c3-7b9c-4071-bedf-8444d3f97ad6" />
   <Project Path="docker-compose.dcproj">
     <Build />
   </Project>

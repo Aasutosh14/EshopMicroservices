@@ -1,9 +1,9 @@
 ﻿namespace Ordering.Application.Orders.Commands.UpdateOrder
 {
-    public class DeleteOrderHandler(IApplicationDBContext dbContext) : ICommandHandler<DeleteOrderCommand, UpdateOrderResult>
+    public class UpdateOrderHandler(IApplicationDBContext dbContext) : ICommandHandler<UpdateOrderCommand, UpdateOrderResult>
     {
 
-        public async Task<UpdateOrderResult> Handle(DeleteOrderCommand command, CancellationToken cancellationToken)
+        public async Task<UpdateOrderResult> Handle(UpdateOrderCommand command, CancellationToken cancellationToken)
         {
             var orderId = OrderId.Of(command.Order.Id);
             var existingOrder = await dbContext.Orders.FindAsync([orderId ], cancellationToken);
